@@ -1,0 +1,8 @@
+*.sketch
+.vscode
+*.xd
+*.fig
+.DS_Store
+/design
+style-guide.md
+README.md

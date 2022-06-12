@@ -1,0 +1,127 @@
+/* ================ */
+/* Below 1344px(Desktop) */
+/* ================ */
+@media (max-width: 84em) {
+  .container--country {
+    column-gap: 6.4rem;
+  }
+
+  .countrywise-detail {
+    column-gap: 6.4rem;
+    grid-template-columns: 40fr 60fr;
+  }
+}
+
+/* ================ */
+/* Below 1200px(Small Desktop) */
+/* ================ */
+@media (max-width: 75em) {
+  .container--country {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .countrywise-detail {
+    grid-template-columns: 40fr 60fr;
+  }
+}
+
+/* ================ */
+/* Below 944px(Landscape Tablets) */
+/* ================ */
+@media (max-width: 59em) {
+  .container--search,
+  .container--country {
+    max-width: min(80rem, 100%);
+  }
+
+  .container--country {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6.4rem;
+  }
+
+  .container--countrywise-detail {
+    max-width: min(75rem, 100%);
+  }
+
+  .country-img {
+    width: 80%;
+  }
+
+  .countrywise-detail {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================ */
+/* Below 704px(Tablets) */
+/* ================ */
+@media (max-width: 44em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container--search,
+  .container--country {
+    max-width: min(65rem, 100%);
+  }
+
+  .container--countrywise-detail {
+    max-width: min(65rem, 100%);
+  }
+
+  .country-img {
+    width: 100%;
+  }
+}
+
+/* ================ */
+/* Below 544px(Phones) */
+/* ================ */
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    padding-inline: 1.6rem;
+  }
+
+  .container--search,
+  .container--country {
+    max-width: min(40rem, 100%);
+  }
+
+  .container--header {
+    padding-inline: 1.6rem;
+  }
+
+  .container--search {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .search-country {
+    grid-row: 1;
+    grid-column: span 4;
+  }
+
+  .search-continent {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+
+  .container--country {
+    grid-template-columns: 1fr;
+  }
+
+  .container--countrywise-detail {
+    max-width: min(45rem, 100%);
+  }
+
+  .country-info {
+    grid-template-columns: 1fr;
+  }
+
+  .country-info--border {
+    flex-direction: column;
+  }
+}

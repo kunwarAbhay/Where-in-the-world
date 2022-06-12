@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <!-- TITLE -->
+  <title>Where in the world?</title>
+</head>
+
+<body class="dark-mode">
+  <!-- HEADER -->
+  <header class="section-header">
+    <div class="container container--header">
+      <h1 class="header-title">Where in the world ?</h1>
+      <button class="btn--dark-mode">
+        <ion-icon name="moon-outline" class="icon dark-mode-icon"></ion-icon>
+        <ion-icon name="sunny-outline" class="icon light-mode-icon"></ion-icon>
+        <span>Dark Mode</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SEARCH COUNTRIES -->
+  <section class="section-search">
+    <div class="container container--search">
+      <input type="search" placeholder="Search for a country ..." spellcheck="false" class="search-country" />
+      <select class="search-continent">
+        <option value="">Filter By Region</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">Americas</option>
+        <option value="Antarctic">Antarctica</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- DISPLAY COUNTRIES DATA -->
+  <section class="section-countries">
+    <div class="container container--country">
+      <!-- COUNTRY-CARD -->
+      <!-- 
+      <figure class="country country-code continent" data-country="Germany">
+        <img src="country.jpg" alt="Country Flag" class="country-flag" />
+        <div class="country-detail">
+          <h3 class="country-name">Germany</h3>
+          <ul>
+            <li><span class="key">Population</span> : <span class="value">1000000</span></li>
+            <li><span class="key">Region</span> : <span class="value">Europe</span></li>
+            <li><span class="key">Capital</span> : <span class="value">Berlin</span></li>
+          </ul>
+        </div>
+      </figure> 
+      -->
+    </div>
+  </section>
+
+  <!-- JAVASCRIPT -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/darkMode.js"></script>
+</body>
+
+</html>
